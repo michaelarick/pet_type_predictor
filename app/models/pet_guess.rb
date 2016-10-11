@@ -1,6 +1,4 @@
 class PetGuess < ApplicationRecord
-  attr_accessor :pet_type
-
   def set_guess_strategy(strategy)
     @guess_strategy = strategy
   end
