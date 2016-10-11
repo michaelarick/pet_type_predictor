@@ -24,19 +24,6 @@ describe 'PetGuess' do
     end
   end
 
-  context '#save' do
-    it 'will save the height, weight, and the pet_type and can be gotten later' do
-      @guess.height = 123
-      @guess.weight = 456
-      @guess.pet_type = 'Dog'
-      @guess.save
-      saved_guess = PetGuess.find_by_id(@guess.id)
-      expect(saved_guess.height).to eq(123)
-      expect(saved_guess.weight).to eq(456)
-      expect(saved_guess.pet_type).to eq('Dog')
-    end
-  end
-
   context 'guessing' do
     context 'without a guess strategy' do
       it 'makes no guesses' do
