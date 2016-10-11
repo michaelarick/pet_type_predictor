@@ -15,10 +15,9 @@ ActiveRecord::Schema.define(version: 20161011003009) do
   create_table "pet_guesses", force: :cascade do |t|
     t.float    "height"
     t.float    "weight"
-    t.string   "guessed_pet_type"
-    t.string   "correct_pet_type"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.string   "pet_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
