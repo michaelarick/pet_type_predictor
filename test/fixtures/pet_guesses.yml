@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  height: 
+  weight: 
+  guessed_pet_type: MyString
+  correct_pet_type: MyString
+
+two:
+  height: 
+  weight: 
+  guessed_pet_type: MyString
+  correct_pet_type: MyString
