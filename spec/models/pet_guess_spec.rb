@@ -22,7 +22,6 @@ describe 'PetGuess' do
         expect(guess.pet_type).to be_nil
       end
     end
-  
   end
 
   context '#save' do
@@ -38,7 +37,7 @@ describe 'PetGuess' do
     end
   end
 
-  context 'guessing'
+  context 'guessing' do
     context 'without a guess strategy' do
       it 'makes no guesses' do
         expect(@guess.pet_type_guess).to be_nil
@@ -67,4 +66,5 @@ describe 'PetGuess' do
         expect(@guess.pet_type_guess).to eq('Dog')
       end
     end
+  end
 end
